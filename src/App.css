@@ -39,16 +39,17 @@ a:hover {
 }
 .img-board {
 	width: 100%;
-
 	height: 15rem;
 	margin-left: 5rem;
 	margin-right: 5rem;
 	margin-top: 5rem;
-
+	position: relative;
 	align-items: center;
 	object-fit: cover;
 	border-radius: 20px;
+	filter: contrast(40%);
 }
+
 img {
 	display: flex;
 }
