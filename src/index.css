@@ -1,13 +1,70 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+.container {
+	width: 85rem;
+}
+.img-cards {
+	max-width: 350px;
+	min-width: 350px;
+	height: 350px;
+
+	object-fit: cover;
+	border-radius: 10px;
+}
+.card-list {
+	background-color: #f6f6f6;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-top: 2rem;
+	border-radius: 20px;
+	align-items: center;
+}
+.card {
+	display: flex;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 2rem;
+}
+.card-image {
+	position: relative;
+}
+
+.card-title {
+	position: absolute;
+	top: 80%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.footer {
+	height: 10rem;
+	color: #f6f6f6;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 5rem;
+	margin-right: auto;
+	margin-top: 2rem;
+	width: 100%;
+}
+.logo-footer {
+	width: 7rem;
+	height: 7rem;
 }
