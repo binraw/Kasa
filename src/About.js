@@ -1,6 +1,7 @@
 import React from "react";
 import ImgAbout from "./ImgAbout.png";
 import IconVector from "./Vector.png";
+import Footer from "./Footer";
 
 function About() {
 	return (
@@ -53,6 +54,7 @@ function About() {
 					sur la sécurité domestique pour nos hôtes.
 				</li>
 			</ul>
+			<Footer />
 		</div>
 	);
 }

@@ -61,7 +61,7 @@ code {
 
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 2rem;
+	margin: 1rem;
 }
 .card-image {
 	position: relative;
@@ -133,4 +133,27 @@ code {
 	background-color: #f6f6f6;
 	padding: 1rem;
 	margin-top: auto;
+}
+.not-found-container h1 {
+	color: #ff6060;
+	font-size: 10rem;
+	display: flex;
+
+	justify-content: center;
+}
+.not-found-container h3 {
+	color: #ff6060;
+	font-size: 2rem;
+	display: flex;
+
+	justify-content: center;
+}
+.not-found-container a {
+	color: #ff6060;
+	font-size: 1rem;
+	text-decoration: underline;
+	display: flex;
+	margin-top: 8rem;
+
+	justify-content: center;
 }

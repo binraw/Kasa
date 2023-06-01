@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import CardDetail from "./CardDetail";
+import NotFound from "./NotFound";
 
 function AppRouter() {
 	return (
@@ -21,6 +22,7 @@ function AppRouter() {
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/card/:id" element={<CardDetail />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</Router>
 	);

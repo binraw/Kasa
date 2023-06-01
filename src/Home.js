@@ -2,6 +2,7 @@ import React from "react";
 import ImageAccueil from "./Img.png";
 import CardList from "./CardList";
 import cardsData from "./cardsData.json";
+import Footer from "./Footer";
 
 function Home() {
 	return (
@@ -11,6 +12,7 @@ function Home() {
 				<img className="img-board" src={ImageAccueil} alt="l'eau" />
 			</div>
 			<CardList className="cards" cards={cardsData} />
+			<Footer />
 		</div>
 	);
 }

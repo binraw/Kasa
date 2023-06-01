@@ -1,4 +1,5 @@
 import { ReactComponent as Logo } from "./LogoFooter.svg";
+
 function Footer() {
 	return (
 		<footer className="footer">
