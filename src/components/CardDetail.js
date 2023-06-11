@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import cardsData from "./cardsData.json";
+import cardsData from "../cardsData.json";
 
 function CardDetail() {
 	const { id } = useParams();

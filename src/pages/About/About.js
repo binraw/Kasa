@@ -1,8 +1,8 @@
 import React from "react";
-import ImgAbout from "./ImgAbout.png";
-import IconVector from "./Vector.png";
-import Footer from "./Footer";
-import Carrousel from "./Carrousel";
+import ImgAbout from "../../ImgAbout.png";
+import IconVector from "../../Vector.png";
+import Footer from "../../components/Footer";
+import Carrousel from "../../components/Carrousel";
 
 function About() {
 	const carrouselData1 = [

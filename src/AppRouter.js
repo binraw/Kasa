@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import CardDetail from "./CardDetail";
+import Home from "../src/pages/Home/Home";
+import About from "../src/pages/About/About";
+import CardDetail from "../src/components/CardDetail";
 import NotFound from "./NotFound";
 
 function AppRouter() {

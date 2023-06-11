@@ -1,5 +1,6 @@
-import Header from "./Header";
-import "./App.css";
+import Header from "../src/components/Header";
+
+import "./style.scss";
 import AppRouter from "./AppRouter";
 
 function App() {
