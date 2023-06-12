@@ -1,4 +1,6 @@
-$color-primary: #ff6060;
+@import "./variables";
+@import "./placeholders";
+@import "./mixins";
 body {
 	margin: 0;
 	padding: 0;
@@ -52,7 +54,7 @@ a:hover {
 	position: relative;
 	align-items: center;
 	object-fit: cover;
-	border-radius: 20px;
+	@include border-radius(20px);
 	filter: contrast(40%);
 }
 
@@ -83,7 +85,7 @@ img {
 
 .container-img h1 {
 	position: absolute;
-	color: #f6f6f6;
+	color: $color-text;
 	top: 10rem;
 	z-index: 10;
 }
@@ -93,11 +95,11 @@ img {
 	min-width: 350px;
 	height: 350px;
 	object-fit: cover;
-	border-radius: 10px;
+	@include border-radius(10px);
 }
 
 .card-list {
-	background-color: #f6f6f6;
+	background-color: $color-background;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -105,7 +107,7 @@ img {
 	margin-left: 5rem;
 	margin-right: 5rem;
 	margin-top: 2rem;
-	border-radius: 20px;
+	@include border-radius(20px);
 	align-items: center;
 }
 
@@ -118,19 +120,19 @@ img {
 
 .card-image {
 	position: relative;
+	@include border-radius(5px);
 }
 
 .card-title {
-	position: absolute;
 	top: 80%;
 	left: 40%;
-	transform: translate(-50%, -50%);
-	color: white;
+	@extend %centered;
+	color: $color-text;
 }
 
 .footer {
 	height: 10rem;
-	color: #f6f6f6;
+	color: $color-text;
 	background-color: black;
 	display: flex;
 	flex-direction: column;
@@ -153,13 +155,11 @@ img {
 	margin-top: 5rem;
 	align-items: center;
 	object-fit: cover;
-	border-radius: 20px;
+	@include border-radius(20px);
 }
 
 .description-about {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	@include flex-center;
 	width: 100%;
 	margin-left: 15rem;
 	margin-right: 15rem;
@@ -171,11 +171,12 @@ img {
 	background-color: $color-primary;
 	padding: 1rem;
 	border-radius: 5px;
-	color: #f6f6f6;
+	color: $color-text;
 	margin: auto;
 }
 
 .icon-arrow {
+	@include flex-center;
 	background-color: $color-primary;
 	width: 1.5rem;
 	height: 1rem;
@@ -185,6 +186,7 @@ img {
 }
 
 .icon-arrow-transform {
+	@include flex-center;
 	background-color: $color-primary;
 	width: 1.5rem;
 	height: 1rem;
@@ -195,7 +197,7 @@ img {
 }
 
 .description {
-	background-color: #f6f6f6;
+	background-color: $color-background;
 	padding: 1rem;
 	margin-top: auto;
 }
@@ -203,22 +205,19 @@ img {
 .not-found-container h1 {
 	color: $color-primary;
 	font-size: 10rem;
-	display: flex;
-	justify-content: center;
+	@include flex-center;
 }
 
 .not-found-container h3 {
 	color: $color-primary;
 	font-size: 2rem;
-	display: flex;
-	justify-content: center;
+	@include flex-center;
 }
 
 .not-found-container a {
 	color: $color-primary;
 	font-size: 1rem;
 	text-decoration: underline;
-	display: flex;
+	@include flex-center;
 	margin-top: 8rem;
-	justify-content: center;
 }
