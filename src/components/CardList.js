@@ -6,7 +6,7 @@ function CardList({ cards }) {
 	return (
 		<div className="card-list">
 			{cards.map((card) => (
-				<Link key={card.id} to={`/cards/${card.id}`}>
+				<Link key={card.id} to={`/card/${card.id}`}>
 					<Card key={card.id} title={card.title} cover={card.cover} />
 				</Link>
 			))}

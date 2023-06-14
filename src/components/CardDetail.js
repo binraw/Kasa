@@ -13,8 +13,7 @@ function CardDetail() {
 
 	return (
 		<div>
-			<h2>Card Detail - ID: {id}</h2>
-			<p>Title: {card.title}</p>
+			<h2>Title: {card.title}</h2>
 			<p>Description: {card.description}</p>
 			<img src={card.cover} alt={card.title} />
 		</div>

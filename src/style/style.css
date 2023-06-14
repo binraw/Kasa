@@ -58,6 +58,8 @@ a:hover {
   align-items: center;
   object-fit: cover;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   filter: contrast(40%);
 }
 
@@ -99,6 +101,8 @@ img {
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
 }
 
 .card-list {
@@ -111,6 +115,8 @@ img {
   margin-right: 5rem;
   margin-top: 2rem;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   align-items: center;
 }
 
@@ -124,6 +130,8 @@ img {
 .card-image {
   position: relative;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 
 .card-title {
@@ -158,6 +166,8 @@ img {
   align-items: center;
   object-fit: cover;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
 }
 
 .description-about {
