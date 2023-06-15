@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "../src/pages/Home/Home";
 import About from "../src/pages/About/About";
-import CardDetail from "../src/components/CardDetail";
+import CardDetail from "../src/pages/Product/CardDetail";
 import NotFound from "./NotFound";
 
 function AppRouter() {
 	return (
 		<Router>
 			<nav>
-				<ul>
+				<ul className="navigation-bar">
 					<li>
 						<Link to="/">Accueil</Link>
 					</li>

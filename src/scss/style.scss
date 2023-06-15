@@ -16,7 +16,7 @@ nav {
 	padding: 10px;
 }
 
-ul {
+.navigation-bar {
 	list-style-type: none;
 	display: flex;
 	justify-content: flex-end;
@@ -159,7 +159,7 @@ img {
 }
 
 .description-about {
-	@include flex-center;
+	list-style: none;
 	width: 100%;
 	margin-left: 15rem;
 	margin-right: 15rem;
@@ -220,4 +220,68 @@ img {
 	text-decoration: underline;
 	@include flex-center;
 	margin-top: 8rem;
+}
+.title-card {
+	color: $color-primary;
+	width: fit-content;
+}
+.img-card {
+	width: 100%;
+	height: 30rem;
+	margin: 3rem 5rem 3rem 5rem;
+	@include border-radius(25px);
+}
+.container-card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0rem 5rem 0rem 5rem;
+}
+.location-card {
+	color: $color-primary;
+}
+.person-card {
+	position: absolute;
+	display: flex;
+
+	align-self: flex-end;
+}
+.imghost-card {
+	border-radius: 50%;
+}
+.hostname-card {
+	color: $color-primary;
+	font-size: larger;
+
+	order: -1;
+}
+.container-tags {
+	display: flex;
+	position: absolute;
+	top: 49rem;
+	left: 2rem;
+}
+.tag-card {
+	color: white;
+	background-color: $color-primary;
+	width: 10rem;
+	height: 2rem;
+
+	@include flex-center;
+	@include border-radius(10px);
+}
+.container-stars {
+	display: flex;
+	margin-top: 3rem;
+
+	align-items: end;
+	align-self: flex-end;
+}
+.filled-star {
+	color: $color-primary;
+	font-size: x-large;
+}
+.empty-star {
+	color: #e3e3e3;
+	font-size: x-large;
 }
