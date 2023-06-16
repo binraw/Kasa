@@ -26,7 +26,6 @@ nav {
   margin-right: 5rem;
   margin-top: 2rem;
 }
-
 li {
   margin-right: 10px;
 }
@@ -34,10 +33,11 @@ li {
 a {
   text-decoration: none;
   padding: 5px;
+  color: #ff6060;
 }
 
 a:hover {
-  color: red;
+  text-decoration: underline;
 }
 
 .logo-title {
@@ -46,6 +46,11 @@ a:hover {
   height: auto;
   top: 2rem;
   left: 5rem;
+}
+@media (max-width: 768px) {
+  .logo-title {
+    width: 100px;
+  }
 }
 
 .img-board {
@@ -108,12 +113,12 @@ img {
 
 .card-list {
   background-color: #f6f6f6;
-  width: 100%;
+  width: max-content;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   margin-left: 5rem;
-  margin-right: 5rem;
+  margin-right: 10rem;
   margin-top: 2rem;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -228,6 +233,11 @@ img {
   background-color: #f6f6f6;
   padding: 1rem;
   margin-top: auto;
+  margin-bottom: auto;
+}
+
+.item-description {
+  display: block;
 }
 
 .not-found-container h1 {
@@ -263,11 +273,22 @@ img {
 
 .img-card {
   width: 100%;
-  height: 30rem;
-  margin: 3rem 5rem 3rem 5rem;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
+  height: 25rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+  position: relative;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .img-card {
+    width: 90%;
+    height: auto;
+  }
 }
 
 .container-card {
@@ -276,7 +297,6 @@ img {
   width: 100%;
   margin: 0rem 5rem 0rem 5rem;
 }
-
 .location-card {
   color: #ff6060;
 }
@@ -286,22 +306,52 @@ img {
   display: flex;
   align-self: flex-end;
 }
+@media (max-width: 768px) {
+  .person-card {
+    position: relative;
+    order: 2;
+  }
+}
 
 .imghost-card {
   border-radius: 50%;
+  margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .imghost-card {
+    height: 5rem;
+    width: auto;
+  }
 }
 
 .hostname-card {
   color: #ff6060;
   font-size: larger;
+  margin-top: 3rem;
   order: -1;
+}
+
+.container-tagstars {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .container-tagstars {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .container-tags {
   display: flex;
-  position: absolute;
-  top: 49rem;
-  left: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .container-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 
 .tag-card {
@@ -316,22 +366,39 @@ img {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .tag-card {
+    height: 2rem;
+    width: 10rem;
+  }
+}
 
 .container-stars {
   display: flex;
+  height: 2rem;
   margin-top: 3rem;
-  align-items: end;
-  align-self: flex-end;
 }
 
 .filled-star {
   color: #ff6060;
   font-size: x-large;
 }
+@media (max-width: 768px) {
+  .filled-star {
+    height: 1rem;
+    width: auto;
+  }
+}
 
 .empty-star {
   color: #e3e3e3;
   font-size: x-large;
+}
+@media (max-width: 768px) {
+  .empty-star {
+    height: 1rem;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

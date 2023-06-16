@@ -31,7 +31,7 @@ function Carrousel({ data }) {
 							</li>
 							{isParagraphVisible[index] && (
 								<li className="description">
-									<p>{item.description}</p>
+									<p className="item-description">{item.description}</p>
 								</li>
 							)}
 						</ul>

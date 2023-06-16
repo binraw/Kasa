@@ -22,6 +22,8 @@ nav {
 	justify-content: flex-end;
 	margin-right: 5rem;
 	margin-top: 2rem;
+	@media (max-width: 768px) {
+	}
 }
 
 li {
@@ -31,10 +33,11 @@ li {
 a {
 	text-decoration: none;
 	padding: 5px;
+	color: $color-primary;
 }
 
 a:hover {
-	color: red;
+	text-decoration: underline;
 }
 
 .logo-title {
@@ -43,6 +46,9 @@ a:hover {
 	height: auto;
 	top: 2rem;
 	left: 5rem;
+	@media (max-width: 768px) {
+		width: 100px;
+	}
 }
 
 .img-board {
@@ -101,12 +107,12 @@ img {
 
 .card-list {
 	background-color: $color-background;
-	width: 100%;
+	width: max-content;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2rem;
 	margin-left: 5rem;
-	margin-right: 5rem;
+	margin-right: 10rem;
 	margin-top: 2rem;
 	@include border-radius(20px);
 	align-items: center;
@@ -210,6 +216,10 @@ img {
 	background-color: $color-background;
 	padding: 1rem;
 	margin-top: auto;
+	margin-bottom: auto;
+}
+.item-description {
+	display: block;
 }
 
 .not-found-container h1 {
@@ -237,15 +247,27 @@ img {
 }
 .img-card {
 	width: 100%;
-	height: 30rem;
-	margin: 3rem 5rem 3rem 5rem;
-	@include border-radius(25px);
+	height: 25rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-top: 5rem;
+	position: relative;
+	align-items: center;
+	object-fit: cover;
+	@include border-radius(20px);
+	@media (max-width: 768px) {
+		width: 90%;
+		height: auto;
+	}
 }
 .container-card {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	margin: 0rem 5rem 0rem 5rem;
+	@media (max-width: 768px) {
+		// justify-content: center;
+	}
 }
 .location-card {
 	color: $color-primary;
@@ -255,21 +277,41 @@ img {
 	display: flex;
 
 	align-self: flex-end;
+	@media (max-width: 768px) {
+		position: relative;
+		order: 2;
+	}
 }
 .imghost-card {
 	border-radius: 50%;
+	margin-top: 1rem;
+	@media (max-width: 768px) {
+		height: 5rem;
+		width: auto;
+	}
 }
 .hostname-card {
 	color: $color-primary;
 	font-size: larger;
-
+	margin-top: 3rem;
 	order: -1;
+}
+.container-tagstars {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 .container-tags {
 	display: flex;
-	position: absolute;
-	top: 49rem;
-	left: 2rem;
+	margin-top: 3rem;
+	@media (max-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
 }
 .tag-card {
 	color: white;
@@ -279,19 +321,29 @@ img {
 
 	@include flex-center;
 	@include border-radius(10px);
+	@media (max-width: 768px) {
+		height: 2rem;
+		width: 10rem;
+	}
 }
 .container-stars {
 	display: flex;
+	height: 2rem;
 	margin-top: 3rem;
-
-	align-items: end;
-	align-self: flex-end;
 }
 .filled-star {
 	color: $color-primary;
 	font-size: x-large;
+	@media (max-width: 768px) {
+		height: 1rem;
+		width: auto;
+	}
 }
 .empty-star {
 	color: #e3e3e3;
 	font-size: x-large;
+	@media (max-width: 768px) {
+		height: 1rem;
+		width: auto;
+	}
 }

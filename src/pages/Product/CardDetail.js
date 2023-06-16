@@ -17,10 +17,10 @@ function CardDetail() {
 	if (!card) {
 		return <Route path="*" element={<NotFound />} />;
 	}
-	const maxRating = 5; // Nombre maximum d'étoiles
-	const rating = Math.round(card.rating); // Arrondi de la note
-	const filledStars = rating > 0 ? rating : 0; // Nombre d'étoiles pleines
-	const emptyStars = maxRating - filledStars; // Nombre d'étoiles vides
+	const maxRating = 5;
+	const rating = Math.round(card.rating);
+	const filledStars = rating > 0 ? rating : 0;
+	const emptyStars = maxRating - filledStars;
 	const dataCarrouselCard = [
 		{
 			title: "Description",
@@ -49,30 +49,7 @@ function CardDetail() {
 				</div>
 				<h2 className="title-card">{card.title}</h2>
 				<h3 className="location-card">{card.location}</h3>
-
-				<div className="container-stars">
-					{Array(filledStars)
-						.fill()
-						.map((_, index) => (
-							<img
-								className="filled-star"
-								key={index}
-								src={stars}
-								alt="star"
-							></img>
-						))}
-					{Array(emptyStars)
-						.fill()
-						.map((_, index) => (
-							<img
-								className="empty-star"
-								key={index}
-								src={starsgris}
-								alt="star grey"
-							></img>
-						))}
-				</div>
-				<div>
+				<div className="container-tagstars">
 					<ul className="container-tags">
 						{card.tags.map((tag, i) => (
 							<li className="tag-card" key={i}>
@@ -80,11 +57,34 @@ function CardDetail() {
 							</li>
 						))}
 					</ul>
-				</div>
-				<div className="container-carrousel">
-					<Carrousel data={dataCarrouselCard} />
+					<div className="container-stars">
+						{Array(filledStars)
+							.fill()
+							.map((_, index) => (
+								<img
+									className="filled-star"
+									key={index}
+									src={stars}
+									alt="star"
+								></img>
+							))}
+						{Array(emptyStars)
+							.fill()
+							.map((_, index) => (
+								<img
+									className="empty-star"
+									key={index}
+									src={starsgris}
+									alt="star grey"
+								></img>
+							))}
+					</div>
 				</div>
 			</div>
+			<div className="container-carrousel">
+				<Carrousel data={dataCarrouselCard} />
+			</div>
+
 			<Footer />
 		</div>
 	);
