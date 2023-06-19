@@ -7,6 +7,16 @@ import NotFound from "./NotFound";
 function AppRouter() {
 	return (
 		<Router>
+			<nav>
+				<ul className="navigation-bar">
+					<li>
+						<Link to="/">Accueil</Link>
+					</li>
+					<li>
+						<Link to="/about">À propos</Link>
+					</li>
+				</ul>
+			</nav>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
