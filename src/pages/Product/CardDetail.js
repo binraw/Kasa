@@ -21,13 +21,15 @@ function CardDetail() {
 	const rating = Math.round(card.rating);
 	const filledStars = rating > 0 ? rating : 0;
 	const emptyStars = maxRating - filledStars;
-	const dataCarrouselCard = [
+	const elementDataDescription = [
 		{
 			title: "Description",
 			description: card.description,
 			img: IconVector,
 			id: 1,
 		},
+	];
+	const elementDataEquipement = [
 		{
 			title: "Equipement",
 			description: card.equipments,
@@ -81,8 +83,9 @@ function CardDetail() {
 					</div>
 				</div>
 			</div>
-			<div className="container-carrousel">
-				<Carrousel data={dataCarrouselCard} />
+			<div className="structure-card-detail">
+				<Carrousel data={elementDataDescription} />
+				<Carrousel data={elementDataEquipement} />
 			</div>
 
 			<Footer />

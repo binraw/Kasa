@@ -36,11 +36,15 @@ function About() {
 		},
 	];
 	return (
-		<div>
-			<img className="img-about" src={ImgAbout} alt="Montagne suisse" />
-			<Carrousel data={carrouselData1} />
-			<Footer />
-		</div>
+		<>
+			<div>
+				<img className="img-about" src={ImgAbout} alt="Montagne suisse" />
+				<div className="structure-about">
+					<Carrousel data={carrouselData1} />
+				</div>
+				<Footer />
+			</div>
+		</>
 	);
 }
 

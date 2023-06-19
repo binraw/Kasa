@@ -178,11 +178,25 @@ img {
 
 .container-carrousel-main {
   min-width: 100%;
+}
+
+.structure-card-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  min-width: 100%;
 }
 @media (max-width: 768px) {
-  .container-carrousel-main {
+  .structure-card-detail {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.structure-about {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (max-width: 768px) {
+  .structure-about {
     grid-template-columns: repeat(1, 1fr);
   }
 }
