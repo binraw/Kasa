@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useParams, Route } from "react-router-dom";
 import cardsData from "../../cardsData.json";
 import Footer from "../../components/Footer";
@@ -48,6 +49,7 @@ function CardDetail() {
 					alt="fleche droite"
 					srcset="fleche droite"
 				/>
+
 				<img
 					className="arrow-left"
 					src={IconFlecheG}
