@@ -110,9 +110,10 @@ img {
 	width: max-content;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 2rem;
 	margin-left: 5rem;
-	margin-right: 10rem;
+	margin-right: 5rem;
 	margin-top: 2rem;
 	@include border-radius(20px);
 	align-items: center;
@@ -256,11 +257,15 @@ img {
 	color: $color-primary;
 	width: fit-content;
 }
-.img-card {
+.container-detail-card {
+	width: 100%;
+	position: relative;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+.cover-detail {
 	width: 100%;
 	height: 25rem;
-	margin-left: 5rem;
-	margin-right: 5rem;
 	margin-top: 5rem;
 	position: relative;
 	align-items: center;
@@ -270,6 +275,22 @@ img {
 		width: 90%;
 		height: auto;
 	}
+}
+.arrow-right {
+	position: absolute;
+	top: 15rem;
+	right: 3rem;
+	z-index: 10;
+	height: 7rem;
+	width: 5rem;
+}
+.arrow-left {
+	position: absolute;
+	top: 15rem;
+	left: 3rem;
+	z-index: 10;
+	height: 7rem;
+	width: 5rem;
 }
 .container-card {
 	display: flex;

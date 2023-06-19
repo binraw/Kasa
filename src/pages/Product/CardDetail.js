@@ -6,6 +6,8 @@ import stars from "../../stars.png";
 import starsgris from "../../starsgris.png";
 import Carrousel from "../../components/Carrousel";
 import IconVector from "../../Vector.png";
+import IconFlecheD from "../../fleched.png";
+import IconFlecheG from "../../flecheg.png";
 
 import NotFound from "../../NotFound";
 
@@ -39,7 +41,21 @@ function CardDetail() {
 	];
 	return (
 		<div className="container">
-			<img className="img-card" src={card.cover} alt={card.title} />
+			<div className="container-detail-card">
+				<img
+					className="arrow-right"
+					src={IconFlecheD}
+					alt="fleche droite"
+					srcset="fleche droite"
+				/>
+				<img
+					className="arrow-left"
+					src={IconFlecheG}
+					alt="fleche gauche"
+					srcset="fleche gauche"
+				/>
+				<img className="cover-detail" src={card.cover} alt={card.title} />
+			</div>
 			<div className="container-card">
 				<div className="person-card">
 					<img
