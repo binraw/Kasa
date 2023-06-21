@@ -1,26 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import cardsData from "../cardsData.json";
 
 function Slider(props) {
+	const [currentCardIndex, setCurrentCardIndex] = useState(0);
 	const navigate = useNavigate();
 
 	const handleClickNext = () => {
-		props.handleClickNext();
-		handleRedirect();
+		const nextIndex = currentCardIndex + 1;
+		if (nextIndex < cardsData.length) {
+			setCurrentCardIndex(nextIndex);
+			handleRedirect(cardsData[nextIndex].id);
+		}
 	};
 
 	const handleClickPrevious = () => {
-		props.handleClickPrevious();
-		handleRedirect();
+		const previousIndex = currentCardIndex - 1;
+		if (previousIndex >= 0) {
+			setCurrentCardIndex(previousIndex);
+			handleRedirect(cardsData[previousIndex].id);
+		}
 	};
 
-	const handleRedirect = () => {
-		navigate("/card/f72a452f");
+	const handleRedirect = (id) => {
+		navigate(`/card/${id}`);
 	};
 
 	return (
 		<div>
-			{/* Votre code pour le composant Slider */}
 			<button onClick={handleClickPrevious}>Précédent</button>
 			<button onClick={handleClickNext}>Suivant</button>
 		</div>
