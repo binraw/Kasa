@@ -39,12 +39,11 @@ function CardDetail() {
 			id: 1,
 		},
 	];
+	const pictures = card.pictures;
 	return (
 		<div className="container">
 			<div className="container-detail-card">
-				<Slider />
-
-				<img className="cover-detail" src={card.cover} alt={card.title} />
+				<Slider pictures={pictures} />
 			</div>
 			<div className="container-card">
 				<div className="container-title-person">
