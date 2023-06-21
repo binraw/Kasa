@@ -1,7 +1,6 @@
-import Header from "../src/components/Header";
-
 import "./style/style.css";
 import AppRouter from "./AppRouter";
+import Header from "./components/Header";
 
 function App() {
 	return (

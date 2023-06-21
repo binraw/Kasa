@@ -47,16 +47,20 @@ function CardDetail() {
 				<img className="cover-detail" src={card.cover} alt={card.title} />
 			</div>
 			<div className="container-card">
-				<div className="person-card">
-					<img
-						className="imghost-card"
-						src={card.host.picture}
-						alt={card.host.name}
-					/>
-					<p className="hostname-card">{card.host.name}</p>
+				<div className="container-title-person">
+					<div>
+						<h2 className="title-card">{card.title}</h2>
+						<h3 className="location-card">{card.location}</h3>
+					</div>
+					<div className="person-card">
+						<img
+							className="imghost-card"
+							src={card.host.picture}
+							alt={card.host.name}
+						/>
+						<p className="hostname-card">{card.host.name}</p>
+					</div>
 				</div>
-				<h2 className="title-card">{card.title}</h2>
-				<h3 className="location-card">{card.location}</h3>
 				<div className="container-tagstars">
 					<ul className="container-tags">
 						{card.tags.map((tag, i) => (

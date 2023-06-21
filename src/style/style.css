@@ -16,7 +16,8 @@ code {
 }
 
 nav {
-  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navigation-bar {
@@ -67,6 +68,12 @@ a:hover {
   -moz-border-radius: 20px;
   filter: contrast(40%);
 }
+@media (max-width: 768px) {
+  .img-board {
+    height: 30vh;
+    width: 90%;
+  }
+}
 
 img {
   display: flex;
@@ -80,11 +87,11 @@ img {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
 }
 
 .container-img {
   width: 100%;
+  margin: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -100,20 +107,23 @@ img {
   top: 10rem;
   z-index: 10;
 }
+@media (max-width: 768px) {
+  .container-img h1 {
+    font-size: x-large;
+  }
+}
 
 .img-cards {
-  max-width: 350px;
-  min-width: 350px;
-  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  max-width: 100%;
+  height: 20rem;
 }
 
 .card-list {
   background-color: #f6f6f6;
-  width: max-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -127,11 +137,27 @@ img {
   align-items: center;
 }
 
+.card-list a {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .card-list a {
+    width: 100%;
+  }
+}
+
 .card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0.5rem;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+    justify-content: center;
+    margin-top: 1rem;
+  }
 }
 
 .card-image {
@@ -179,16 +205,20 @@ img {
 
 .container-carrousel-main {
   min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .structure-card-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  min-width: 100%;
+  margin: auto 5rem auto 5rem;
 }
 @media (max-width: 768px) {
   .structure-card-detail {
     grid-template-columns: repeat(1, 1fr);
+    margin: auto;
   }
 }
 
@@ -204,11 +234,15 @@ img {
 
 .description-about {
   list-style: none;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 70vw;
+  min-width: 45vw;
   padding: 0;
   position: relative;
+}
+@media (max-width: 768px) {
+  .description-about {
+    width: 90vw;
+  }
 }
 
 .description-about h3 {
@@ -216,7 +250,7 @@ img {
   padding: 1rem;
   border-radius: 5px;
   color: #f6f6f6;
-  margin: auto;
+  margin: auto 1rem auto 2rem;
 }
 
 .icon-arrow {
@@ -228,7 +262,7 @@ img {
   height: 1rem;
   position: absolute;
   top: 1rem;
-  right: 2rem;
+  right: 3rem;
 }
 
 .icon-arrow-transform {
@@ -240,15 +274,14 @@ img {
   height: 1rem;
   position: absolute;
   top: 1rem;
-  right: 2rem;
+  right: 3rem;
   transform: rotate(180deg);
 }
 
 .description {
   background-color: #f6f6f6;
   padding: 1rem;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 1.5rem auto 2rem;
 }
 
 .item-description {
@@ -345,10 +378,14 @@ img {
   color: #ff6060;
 }
 
-.person-card {
-  position: absolute;
+.container-title-person {
   display: flex;
-  align-self: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.person-card {
+  display: flex;
 }
 @media (max-width: 768px) {
   .person-card {
@@ -378,6 +415,7 @@ img {
 .container-tagstars {
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 @media (max-width: 768px) {
   .container-tagstars {
@@ -388,7 +426,6 @@ img {
 
 .container-tags {
   display: flex;
-  margin-top: 3rem;
 }
 @media (max-width: 768px) {
   .container-tags {
@@ -420,7 +457,6 @@ img {
 .container-stars {
   display: flex;
   height: 2rem;
-  margin-top: 3rem;
 }
 
 .filled-star {
