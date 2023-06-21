@@ -7,19 +7,21 @@ function Slider(props) {
 	const navigate = useNavigate();
 
 	const handleClickNext = () => {
-		const nextIndex = currentCardIndex + 1;
-		if (nextIndex < cardsData.length) {
-			setCurrentCardIndex(nextIndex);
-			handleRedirect(cardsData[nextIndex].id);
+		let nextIndex = currentCardIndex + 1;
+		if (nextIndex >= cardsData.length) {
+			nextIndex = 0;
 		}
+		setCurrentCardIndex(nextIndex);
+		handleRedirect(cardsData[nextIndex].id);
 	};
 
 	const handleClickPrevious = () => {
-		const previousIndex = currentCardIndex - 1;
-		if (previousIndex >= 0) {
-			setCurrentCardIndex(previousIndex);
-			handleRedirect(cardsData[previousIndex].id);
+		let previousIndex = currentCardIndex - 1;
+		if (previousIndex < 0) {
+			previousIndex = cardsData.length - 1;
 		}
+		setCurrentCardIndex(previousIndex);
+		handleRedirect(cardsData[previousIndex].id);
 	};
 
 	const handleRedirect = (id) => {
@@ -28,6 +30,7 @@ function Slider(props) {
 
 	return (
 		<div>
+			{/* Votre code pour le composant Slider */}
 			<button onClick={handleClickPrevious}>Précédent</button>
 			<button onClick={handleClickNext}>Suivant</button>
 		</div>
