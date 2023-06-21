@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import cardsData from "../cardsData.json";
+import ArrowR from "../fleched.png";
+import ArrowL from "../flecheg.png";
 
 function Slider(props) {
 	const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -30,9 +32,12 @@ function Slider(props) {
 
 	return (
 		<div>
-			{/* Votre code pour le composant Slider */}
-			<button onClick={handleClickPrevious}>Précédent</button>
-			<button onClick={handleClickNext}>Suivant</button>
+			<button className="btn-change" onClick={handleClickPrevious}>
+				<img className="arrow-left" src={ArrowL} alt="arrow pass card" />
+			</button>
+			<button className="btn-change" onClick={handleClickNext}>
+				<img className="arrow-right" src={ArrowR} alt="arrow next card" />
+			</button>
 		</div>
 	);
 }

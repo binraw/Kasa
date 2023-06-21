@@ -329,6 +329,12 @@ img {
   width: 5rem;
 }
 
+.btn-change {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
 .container-card {
   display: flex;
   flex-direction: column;

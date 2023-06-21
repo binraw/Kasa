@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { useParams, Route } from "react-router-dom";
 import cardsData from "../../cardsData.json";
@@ -13,17 +13,9 @@ import NotFound from "../../NotFound";
 
 function CardDetail() {
 	const { id } = useParams();
-	const len = cardsData.length - 1;
+
 	const card = cardsData.find((card) => card.id === id);
-	const [activeIndex, setActiveIndex] = useState(0);
 
-	const handleClickNext = () => {
-		setActiveIndex((prevIndex) => (prevIndex + 1) % len);
-	};
-
-	const handleClickPrevious = () => {
-		setActiveIndex((prevIndex) => (prevIndex === 0 ? len - 1 : prevIndex - 1));
-	};
 	if (!card) {
 		return <Route path="*" element={<NotFound />} />;
 	}
@@ -50,13 +42,7 @@ function CardDetail() {
 	return (
 		<div className="container">
 			<div className="container-detail-card">
-				<Slider
-					activeIndex={activeIndex}
-					setActiveIndex={setActiveIndex}
-					len={len}
-					handleClickNext={handleClickNext}
-					handleClickPrevious={handleClickPrevious}
-				/>
+				<Slider />
 
 				<img className="cover-detail" src={card.cover} alt={card.title} />
 			</div>
