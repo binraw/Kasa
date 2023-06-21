@@ -20,6 +20,8 @@ function Slider(props) {
 		}
 		setCurrentCardIndex(previousIndex);
 	};
+	const numberOfImg = currentCardIndex + 1;
+	const numberOfLengthImg = props.pictures.length;
 
 	return (
 		<>
@@ -29,14 +31,22 @@ function Slider(props) {
 					src={props.pictures[currentCardIndex]}
 					alt="arrow pass card"
 				/>
-				<div>
-					<button className="btn-change" onClick={handleClickPrevious}>
-						<img className="arrow-left" src={ArrowL} alt="arrow pass card" />
-					</button>
-					<button className="btn-change" onClick={handleClickNext}>
-						<img className="arrow-right" src={ArrowR} alt="arrow next card" />
-					</button>
-				</div>
+				{numberOfLengthImg > 1 && (
+					<div className="cont">
+						<p>{numberOfImg}</p>
+						<p>{numberOfLengthImg}</p>
+					</div>
+				)}
+				{numberOfLengthImg > 1 && (
+					<div>
+						<button className="btn-change" onClick={handleClickPrevious}>
+							<img className="arrow-left" src={ArrowL} alt="arrow pass card" />
+						</button>
+						<button className="btn-change" onClick={handleClickNext}>
+							<img className="arrow-right" src={ArrowR} alt="arrow next card" />
+						</button>
+					</div>
+				)}
 			</div>
 		</>
 	);
