@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Carrousel({ data }) {
 	const [isParagraphVisible, setIsParagraphVisible] = useState(
-		Array(data.length).fill(true)
+		Array(data.length).fill(false)
 	);
 
 	const handleContainerClick = (index) => {

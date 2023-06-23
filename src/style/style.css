@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Montserrat;
 }
 
 code {
@@ -20,7 +20,8 @@ code {
   display: flex;
   justify-content: flex-end;
   margin-right: 5rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
 }
 @media (max-width: 768px) {
   .navigation-bar {
@@ -46,7 +47,6 @@ a:hover {
   position: absolute;
   width: 10%;
   height: auto;
-  top: 2%;
   left: 5%;
 }
 @media (max-width: 768px) {
@@ -60,7 +60,7 @@ a:hover {
   height: 15rem;
   margin-left: 5rem;
   margin-right: 5rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
   position: relative;
   align-items: center;
   object-fit: cover;
@@ -92,7 +92,7 @@ img {
 
 .container-img {
   width: 100%;
-  margin: 1rem;
+  margin: 3rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -105,7 +105,7 @@ img {
 .container-img h1 {
   position: absolute;
   color: #f6f6f6;
-  top: 10rem;
+  top: 45%;
   z-index: 10;
 }
 @media (max-width: 768px) {
@@ -192,11 +192,12 @@ img {
 }
 
 .img-about {
-  width: 80rem;
+  width: 80%;
   height: 15rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5rem;
+  position: relative;
   align-items: center;
   object-fit: cover;
   border-radius: 20px;
@@ -235,7 +236,7 @@ img {
 
 .description-about {
   list-style: none;
-  max-width: 70vw;
+  max-width: 45vw;
   min-width: 45vw;
   padding: 0;
   position: relative;

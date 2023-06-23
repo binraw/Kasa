@@ -37,7 +37,7 @@ function About() {
 	];
 	return (
 		<>
-			<div>
+			<div className="container">
 				<img className="img-about" src={ImgAbout} alt="Montagne suisse" />
 				<div className="structure-about">
 					<Carrousel data={carrouselData1} />
