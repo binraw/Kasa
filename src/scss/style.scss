@@ -225,6 +225,9 @@ img {
 	border-radius: 5px;
 	color: $color-text;
 	margin: auto 1rem auto 2rem;
+	@media (max-width: 768px) {
+		width: 40vw;
+	}
 }
 
 .icon-arrow {
@@ -234,9 +237,12 @@ img {
 	height: 1rem;
 	position: absolute;
 	top: 1rem;
-	right: 3rem;
+	right: 10%;
 	transition-duration: 0.5s;
 	transform: rotate(0deg);
+	@media (max-width: 768px) {
+		right: 0%;
+	}
 }
 
 .icon-arrow-transform {
@@ -246,15 +252,21 @@ img {
 	height: 1rem;
 	position: absolute;
 	top: 1rem;
-	right: 3rem;
+	right: 10%;
 	transition-duration: 0.5s;
 	transform: rotate(-180deg);
+	@media (max-width: 768px) {
+		right: 0%;
+	}
 }
 
 .description {
 	background-color: $color-background;
 	padding: 1rem;
 	margin: auto 1.5rem auto 2rem;
+	@media (max-width: 768px) {
+		width: 40vw;
+	}
 }
 .item-description {
 	display: flex;
@@ -283,7 +295,11 @@ img {
 }
 .title-card {
 	color: $color-primary;
-	width: fit-content;
+	font-size: 50px;
+	margin-bottom: 0;
+	@media (max-width: 768px) {
+		font-size: 30px;
+	}
 }
 .container-detail-card {
 	width: 100%;
@@ -340,6 +356,7 @@ img {
 .container-card {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	width: 100%;
 	margin: 0rem 5rem 0rem 5rem;
 	@media (max-width: 768px) {
@@ -347,6 +364,10 @@ img {
 }
 .location-card {
 	color: $color-primary;
+	font-size: 20px;
+	@media (max-width: 768px) {
+		font-size: 10px;
+	}
 }
 .container-title-person {
 	display: flex;
@@ -357,7 +378,9 @@ img {
 .person-card {
 	display: flex;
 	@media (max-width: 768px) {
-		position: relative;
+		position: absolute;
+		top: 65%;
+		right: -10%;
 	}
 }
 
@@ -365,8 +388,8 @@ img {
 	border-radius: 50%;
 	margin-top: 1rem;
 	@media (max-width: 768px) {
-		height: 5rem;
-		width: auto;
+		height: auto;
+		width: 30%;
 	}
 }
 .hostname-card {
@@ -374,22 +397,28 @@ img {
 	font-size: larger;
 	margin-top: 3rem;
 	order: -1;
+	@media (max-width: 768px) {
+		margin-top: 1rem;
+	}
 }
 .container-tagstars {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 2rem;
+	flex-wrap: wrap;
 	@media (max-width: 768px) {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 7rem;
 	}
 }
 .container-tags {
 	display: flex;
+	max-width: 100%;
 
 	@media (max-width: 768px) {
 		display: flex;
-		flex-wrap: wrap;
+
 		gap: 1rem;
 	}
 }
@@ -398,17 +427,24 @@ img {
 	background-color: $color-primary;
 	width: 10rem;
 	height: 2rem;
+	margin-left: auto;
+	margin-right: auto;
 
 	@include flex-center;
 	@include border-radius(10px);
 	@media (max-width: 768px) {
-		height: 2rem;
-		width: 10rem;
+		height: auto;
+		width: 33%;
+		padding: 1rem;
 	}
 }
 .container-stars {
 	display: flex;
 	height: 2rem;
+	@media (max-width: 768px) {
+		align-self: flex-start;
+		margin-bottom: 5rem;
+	}
 }
 .filled-star {
 	color: $color-primary;

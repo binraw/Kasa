@@ -69,6 +69,7 @@ function CardDetail() {
 							</li>
 						))}
 					</ul>
+
 					<div className="container-stars">
 						{Array(filledStars)
 							.fill()
