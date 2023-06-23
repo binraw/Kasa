@@ -51,6 +51,7 @@ function CardDetail() {
 						<h2 className="title-card">{card.title}</h2>
 						<h3 className="location-card">{card.location}</h3>
 					</div>
+
 					<div className="person-card">
 						<img
 							className="imghost-card"

@@ -12,11 +12,6 @@ code {
 		monospace;
 }
 
-nav {
-	display: flex;
-	justify-content: flex-end;
-}
-
 .navigation-bar {
 	list-style-type: none;
 	display: flex;
@@ -24,6 +19,7 @@ nav {
 	margin-right: 5rem;
 	margin-top: 2rem;
 	@media (max-width: 768px) {
+		margin-right: 1rem;
 	}
 }
 
@@ -43,12 +39,12 @@ a:hover {
 
 .logo-title {
 	position: absolute;
-	width: 200px;
+	width: 10%;
 	height: auto;
-	top: 2rem;
-	left: 5rem;
+	top: 2%;
+	left: 5%;
 	@media (max-width: 768px) {
-		width: 100px;
+		width: 25%;
 	}
 }
 
@@ -236,6 +232,8 @@ img {
 	position: absolute;
 	top: 1rem;
 	right: 3rem;
+	transition-duration: 0.5s;
+	transform: rotate(0deg);
 }
 
 .icon-arrow-transform {
@@ -246,7 +244,8 @@ img {
 	position: absolute;
 	top: 1rem;
 	right: 3rem;
-	transform: rotate(180deg);
+	transition-duration: 0.5s;
+	transform: rotate(-180deg);
 }
 
 .description {
@@ -255,7 +254,9 @@ img {
 	margin: auto 1.5rem auto 2rem;
 }
 .item-description {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	color: $color-primary;
 }
 
 .not-found-container h1 {
@@ -296,25 +297,36 @@ img {
 	object-fit: cover;
 	@include border-radius(20px);
 	@media (max-width: 768px) {
-		width: 90%;
+		width: 100%;
+
 		height: auto;
 	}
 }
 .arrow-right {
 	position: absolute;
-	top: 15rem;
-	right: 3rem;
+	top: 45%;
+	right: 5%;
 	z-index: 10;
-	height: 7rem;
-	width: 5rem;
+	height: 20%;
+	width: 6%;
+	@media (max-width: 768px) {
+		right: 10%;
+		height: 10%;
+		top: 50%;
+	}
 }
 .arrow-left {
 	position: absolute;
-	top: 15rem;
-	left: 3rem;
+	top: 45%;
+	left: 5%;
 	z-index: 10;
-	height: 7rem;
-	width: 5rem;
+	height: 20%;
+	width: 6%;
+	@media (max-width: 768px) {
+		left: 10%;
+		height: 10%;
+		top: 50%;
+	}
 }
 .btn-change {
 	background: none;
@@ -339,11 +351,11 @@ img {
 	justify-content: space-between;
 	align-items: center;
 }
+
 .person-card {
 	display: flex;
 	@media (max-width: 768px) {
 		position: relative;
-		order: 2;
 	}
 }
 .imghost-card {
@@ -410,4 +422,15 @@ img {
 		height: 1rem;
 		width: auto;
 	}
+}
+
+.container-number-slide {
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	top: 85%;
+}
+.number-slide {
+	color: white;
+	font-size: x-large;
 }

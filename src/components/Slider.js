@@ -32,9 +32,10 @@ function Slider(props) {
 					alt="arrow pass card"
 				/>
 				{numberOfLengthImg > 1 && (
-					<div className="cont">
-						<p>{numberOfImg}</p>
-						<p>{numberOfLengthImg}</p>
+					<div className="container-number-slide">
+						<p className="number-slide">
+							{numberOfImg}/{numberOfLengthImg}
+						</p>
 					</div>
 				)}
 				{numberOfLengthImg > 1 && (
