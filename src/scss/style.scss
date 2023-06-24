@@ -155,7 +155,7 @@ img {
 }
 
 .footer {
-	height: 10rem;
+	height: 23vh;
 	color: $color-text;
 	background-color: black;
 	display: flex;
@@ -336,7 +336,7 @@ img {
 	@media (max-width: 768px) {
 		right: 10%;
 		height: 10%;
-		top: 50%;
+		top: 55%;
 	}
 }
 .arrow-left {
@@ -349,7 +349,7 @@ img {
 	@media (max-width: 768px) {
 		left: 10%;
 		height: 10%;
-		top: 50%;
+		top: 55%;
 	}
 }
 .btn-change {
@@ -429,6 +429,7 @@ img {
 
 	@media (max-width: 768px) {
 		display: flex;
+		margin-right: 3rem;
 	}
 }
 .tag-card {

@@ -175,7 +175,7 @@ img {
 }
 
 .footer {
-  height: 10rem;
+  height: 23vh;
   color: #f6f6f6;
   background-color: black;
   display: flex;
@@ -396,7 +396,7 @@ img {
   .arrow-right {
     right: 10%;
     height: 10%;
-    top: 50%;
+    top: 55%;
   }
 }
 
@@ -412,7 +412,7 @@ img {
   .arrow-left {
     left: 10%;
     height: 10%;
-    top: 50%;
+    top: 55%;
   }
 }
 
@@ -513,6 +513,7 @@ img {
 @media (max-width: 768px) {
   .container-tags {
     display: flex;
+    margin-right: 3rem;
   }
 }
 
