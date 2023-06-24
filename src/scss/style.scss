@@ -1,6 +1,9 @@
 @import "./variables";
 @import "./placeholders";
 @import "./mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair:wght@400;800&family=Raleway&family=Silkscreen&display=swap");
+
 body {
 	margin: 0;
 	padding: 0;
@@ -61,8 +64,8 @@ a:hover {
 	@include border-radius(20px);
 	filter: contrast(40%);
 	@media (max-width: 768px) {
-		height: 30vh;
-		width: 90%;
+		height: 25vh;
+		width: 95%;
 	}
 }
 
@@ -95,10 +98,11 @@ img {
 .container-img h1 {
 	position: absolute;
 	color: $color-text;
-	top: 45%;
+	top: 40%;
 	z-index: 10;
+	font-size: 2.5rem;
 	@media (max-width: 768px) {
-		font-size: x-large;
+		font-size: 1rem;
 	}
 }
 
@@ -111,7 +115,7 @@ img {
 
 .card-list {
 	background-color: $color-background;
-
+	padding-top: 4rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -121,6 +125,10 @@ img {
 	margin-top: 2rem;
 	@include border-radius(20px);
 	align-items: center;
+	@media (max-width: 768px) {
+		padding-top: 0;
+		background-color: $color-text;
+	}
 }
 .card-list a {
 	width: 30%;
@@ -277,6 +285,7 @@ img {
 .not-found-container h1 {
 	color: $color-primary;
 	font-size: 10rem;
+	font-weight: 600;
 	@include flex-center;
 }
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair:wght@400;800&family=Raleway&family=Silkscreen&display=swap");
 .card-title {
   position: absolute;
   top: 50%;
@@ -71,8 +72,8 @@ a:hover {
 }
 @media (max-width: 768px) {
   .img-board {
-    height: 30vh;
-    width: 90%;
+    height: 25vh;
+    width: 95%;
   }
 }
 
@@ -105,12 +106,13 @@ img {
 .container-img h1 {
   position: absolute;
   color: #f6f6f6;
-  top: 45%;
+  top: 40%;
   z-index: 10;
+  font-size: 2.5rem;
 }
 @media (max-width: 768px) {
   .container-img h1 {
-    font-size: x-large;
+    font-size: 1rem;
   }
 }
 
@@ -125,6 +127,7 @@ img {
 
 .card-list {
   background-color: #f6f6f6;
+  padding-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -136,6 +139,12 @@ img {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .card-list {
+    padding-top: 0;
+    background-color: #f6f6f6;
+  }
 }
 
 .card-list a {
@@ -318,6 +327,7 @@ img {
 .not-found-container h1 {
   color: #ff6060;
   font-size: 10rem;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
