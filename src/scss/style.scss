@@ -306,6 +306,11 @@ img {
 	position: relative;
 	margin-left: 3rem;
 	margin-right: 3rem;
+	@media (max-width: 768px) {
+		width: 80%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 }
 .cover-detail {
 	width: 100%;
@@ -318,7 +323,7 @@ img {
 	@media (max-width: 768px) {
 		width: 100%;
 
-		height: auto;
+		height: 22rem;
 	}
 }
 .arrow-right {
@@ -360,6 +365,8 @@ img {
 	width: 100%;
 	margin: 0rem 5rem 0rem 5rem;
 	@media (max-width: 768px) {
+		margin: 1rem;
+		width: 80%;
 	}
 }
 .location-card {
@@ -373,6 +380,9 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width: 768px) {
+		margin-left: 3rem;
+	}
 }
 
 .person-card {
@@ -415,11 +425,10 @@ img {
 .container-tags {
 	display: flex;
 	max-width: 100%;
+	gap: 1rem;
 
 	@media (max-width: 768px) {
 		display: flex;
-
-		gap: 1rem;
 	}
 }
 .tag-card {
@@ -434,8 +443,8 @@ img {
 	@include border-radius(10px);
 	@media (max-width: 768px) {
 		height: auto;
-		width: 33%;
-		padding: 1rem;
+		width: 100%;
+		padding: 0.5rem;
 	}
 }
 .container-stars {

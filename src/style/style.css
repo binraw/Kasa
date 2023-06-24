@@ -358,6 +358,13 @@ img {
   margin-left: 3rem;
   margin-right: 3rem;
 }
+@media (max-width: 768px) {
+  .container-detail-card {
+    width: 80%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 
 .cover-detail {
   width: 100%;
@@ -373,7 +380,7 @@ img {
 @media (max-width: 768px) {
   .cover-detail {
     width: 100%;
-    height: auto;
+    height: 22rem;
   }
 }
 
@@ -422,6 +429,13 @@ img {
   width: 100%;
   margin: 0rem 5rem 0rem 5rem;
 }
+@media (max-width: 768px) {
+  .container-card {
+    margin: 1rem;
+    width: 80%;
+  }
+}
+
 .location-card {
   color: #ff6060;
   font-size: 20px;
@@ -436,6 +450,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .container-title-person {
+    margin-left: 3rem;
+  }
 }
 
 .person-card {
@@ -489,11 +508,11 @@ img {
 .container-tags {
   display: flex;
   max-width: 100%;
+  gap: 1rem;
 }
 @media (max-width: 768px) {
   .container-tags {
     display: flex;
-    gap: 1rem;
   }
 }
 
@@ -514,8 +533,8 @@ img {
 @media (max-width: 768px) {
   .tag-card {
     height: auto;
-    width: 33%;
-    padding: 1rem;
+    width: 100%;
+    padding: 0.5rem;
   }
 }
 
