@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "../src/pages/Home/Home";
 import About from "../src/pages/About/About";
 import CardDetail from "../src/pages/Product/CardDetail";
-import NotFound from "./NotFound";
+import NotFound from "./pages/NotFound/NotFound";
 
 function AppRouter() {
 	return (

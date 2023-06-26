@@ -5,11 +5,11 @@ import cardsData from "../../cardsData.json";
 import Footer from "../../components/Footer";
 import stars from "../../stars.png";
 import starsgris from "../../starsgris.png";
-import Carrousel from "../../components/Carrousel";
+import DropdownButton from "../../components/DropdownButton";
 import IconVector from "../../Vector.png";
 import Slider from "../../components/Slider";
 
-import NotFound from "../../NotFound";
+import NotFound from "../NotFound/NotFound";
 
 function CardDetail() {
 	const { id } = useParams();
@@ -95,8 +95,8 @@ function CardDetail() {
 				</div>
 			</div>
 			<div className="structure-card-detail">
-				<Carrousel data={elementDataDescription} />
-				<Carrousel data={elementDataEquipement} />
+				<DropdownButton data={elementDataDescription} />
+				<DropdownButton data={elementDataEquipement} />
 			</div>
 
 			<Footer />

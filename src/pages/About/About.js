@@ -2,7 +2,7 @@ import React from "react";
 import ImgAbout from "../../ImgAbout.png";
 import IconVector from "../../Vector.png";
 import Footer from "../../components/Footer";
-import Carrousel from "../../components/Carrousel";
+import DropdownButton from "../../components/DropdownButton";
 
 function About() {
 	const carrouselData1 = [
@@ -40,7 +40,7 @@ function About() {
 			<div className="container">
 				<img className="img-about" src={ImgAbout} alt="Montagne suisse" />
 				<div className="structure-about">
-					<Carrousel data={carrouselData1} />
+					<DropdownButton data={carrouselData1} />
 				</div>
 				<Footer />
 			</div>

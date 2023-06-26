@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Carrousel({ data }) {
+function DropdownButton({ data }) {
 	const [isParagraphVisible, setIsParagraphVisible] = useState(
 		Array(data.length).fill(false)
 	);
@@ -42,4 +42,4 @@ function Carrousel({ data }) {
 	);
 }
 
-export default Carrousel;
+export default DropdownButton;
