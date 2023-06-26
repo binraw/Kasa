@@ -1,6 +1,6 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
-import { useParams, Route } from "react-router-dom";
 import cardsData from "../../cardsData.json";
 import Footer from "../../components/Footer";
 import stars from "../../stars.png";
@@ -9,16 +9,16 @@ import DropdownButton from "../../components/DropdownButton";
 import IconVector from "../../Vector.png";
 import Slider from "../../components/Slider";
 
-import NotFound from "../NotFound/NotFound";
-
 function CardDetail() {
 	const { id } = useParams();
 
 	const card = cardsData.find((card) => card.id === id);
 
 	if (!card) {
-		return <Route path="*" element={<NotFound />} />; // change la route
+		window.location.href = "/404";
+		return null;
 	}
+
 	const maxRating = 5;
 	const rating = Math.round(card.rating);
 	const filledStars = rating > 0 ? rating : 0;
