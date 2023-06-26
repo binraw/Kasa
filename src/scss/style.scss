@@ -134,8 +134,10 @@ img {
 }
 .card-list a {
 	width: 30%;
-	@media (max-width: 768px) {
+	@media (max-width: 950px) {
 		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -155,7 +157,7 @@ img {
 	position: relative;
 
 	@include border-radius(5px);
-	@media (max-width: 768px) {
+	@media (max-width: 950px) {
 		width: 25rem;
 	}
 }
@@ -315,12 +317,18 @@ img {
 	font-size: 10rem;
 	font-weight: 600;
 	@include flex-center;
+	@media (max-width: 768px) {
+		font-size: 96px;
+	}
 }
 
 .not-found-container h3 {
 	color: $color-primary;
-	font-size: 2rem;
+
 	@include flex-center;
+	@media (max-width: 768px) {
+		font-size: 10px;
+	}
 }
 
 .not-found-container a {
@@ -329,6 +337,9 @@ img {
 	text-decoration: underline;
 	@include flex-center;
 	margin-top: 8rem;
+	@media (max-width: 768px) {
+		font-size: 10px;
+	}
 }
 .title-card {
 	color: $color-primary;

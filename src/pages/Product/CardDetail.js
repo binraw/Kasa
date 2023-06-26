@@ -34,7 +34,14 @@ function CardDetail() {
 	const elementDataEquipement = [
 		{
 			title: "Equipement",
-			description: card.equipments,
+
+			description:
+				card.equipments &&
+				card.equipments.map((equip, i) => (
+					<li key={i} className="equipement-description">
+						{equip}
+					</li>
+				)),
 			img: IconVector,
 			id: 1,
 		},
