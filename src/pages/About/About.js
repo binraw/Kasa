@@ -42,8 +42,8 @@ function About() {
 				<div className="structure-about">
 					<DropdownButton data={carrouselData1} />
 				</div>
-				<Footer />
 			</div>
+			<Footer />
 		</>
 	);
 }

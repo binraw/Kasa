@@ -15,9 +15,13 @@ function DropdownButton({ data }) {
 		<>
 			<div className="container-carrousel-main">
 				{data.map((item, index) => (
-					<div key={item.id} onClick={() => handleContainerClick(index)}>
+					<div
+						className="drop-structure"
+						key={item.id}
+						onClick={() => handleContainerClick(index)}
+					>
 						<ul className="description-about">
-							<li>
+							<li className="elem-drop">
 								<h3>{item.title}</h3>
 								<img
 									className={

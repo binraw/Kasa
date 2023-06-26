@@ -17,7 +17,7 @@ function CardDetail() {
 	const card = cardsData.find((card) => card.id === id);
 
 	if (!card) {
-		return <Route path="*" element={<NotFound />} />;
+		return <Route path="*" element={<NotFound />} />; // change la route
 	}
 	const maxRating = 5;
 	const rating = Math.round(card.rating);
