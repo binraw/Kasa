@@ -408,13 +408,21 @@ img {
 
 .container-card {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 2rem;
 	position: relative;
 	width: 100%;
 	margin: 0rem 5rem 0rem 5rem;
 	@media (max-width: 768px) {
 		margin: 1rem;
 		width: 80%;
+	}
+}
+.container-title {
+	width: 60%;
+	@media (max-width: 768px) {
+		order: 0;
 	}
 }
 .location-card {
@@ -424,52 +432,39 @@ img {
 		font-size: 10px;
 	}
 }
-.container-title-person {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	@media (max-width: 768px) {
-		margin-left: 3rem;
-	}
-}
 
 .person-card {
 	display: flex;
+	width: 35%;
+	justify-content: center;
 	@media (max-width: 768px) {
-		position: absolute;
-		top: 65%;
-		right: -10%;
+		order: 3;
 	}
 }
 
 .imghost-card {
 	border-radius: 50%;
 	margin-top: 1rem;
+	width: 30%;
+	height: 7rem;
+	object-fit: cover;
 	@media (max-width: 768px) {
-		height: auto;
-		width: 30%;
+		height: 70%;
+		width: 13vw;
 	}
 }
 .hostname-card {
 	color: $color-primary;
 	font-size: larger;
 	margin-top: 3rem;
+	display: flex;
+	flex-wrap: wrap;
 	order: -1;
 	@media (max-width: 768px) {
 		margin-top: 1rem;
 	}
 }
-.container-tagstars {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 2rem;
-	flex-wrap: wrap;
-	@media (max-width: 768px) {
-		display: flex;
-		flex-direction: column;
-		gap: 7rem;
-	}
-}
+
 .container-tags {
 	display: flex;
 	max-width: 100%;
@@ -479,6 +474,8 @@ img {
 		display: flex;
 		flex-wrap: wrap;
 		margin-right: 3rem;
+		order: 1;
+		width: 100%;
 	}
 }
 .tag-card {
@@ -493,8 +490,11 @@ img {
 	@include border-radius(10px);
 	@media (max-width: 768px) {
 		height: auto;
-		width: 100%;
+		width: 20%;
+		min-width: 4.5rem;
 		padding: 0.5rem;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 .container-stars {
@@ -502,7 +502,9 @@ img {
 	height: 2rem;
 	@media (max-width: 768px) {
 		align-self: flex-start;
-		margin-bottom: 5rem;
+		height: 4rem;
+		order: 2;
+		align-items: center;
 	}
 }
 .filled-star {

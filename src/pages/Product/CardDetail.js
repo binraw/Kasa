@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
 import cardsData from "../../cardsData.json";
 import Footer from "../../components/Footer";
 import stars from "../../stars.png";
@@ -53,52 +52,49 @@ function CardDetail() {
 				<Slider pictures={pictures} />
 			</div>
 			<div className="container-card">
-				<div className="container-title-person">
-					<div>
-						<h2 className="title-card">{card.title}</h2>
-						<h3 className="location-card">{card.location}</h3>
-					</div>
-
-					<div className="person-card">
-						<img
-							className="imghost-card"
-							src={card.host.picture}
-							alt={card.host.name}
-						/>
-						<p className="hostname-card">{card.host.name}</p>
-					</div>
+				<div className="container-title">
+					<h2 className="title-card">{card.title}</h2>
+					<h3 className="location-card">{card.location}</h3>
 				</div>
-				<div className="container-tagstars">
-					<ul className="container-tags">
-						{card.tags.map((tag, i) => (
-							<li className="tag-card" key={i}>
-								{tag}
-							</li>
-						))}
-					</ul>
 
-					<div className="container-stars">
-						{Array(filledStars)
-							.fill()
-							.map((_, index) => (
-								<img
-									className="filled-star"
-									key={index}
-									src={stars}
-									alt="star"
-								></img>
-							))}
-						{Array(emptyStars)
-							.fill()
-							.map((_, index) => (
-								<img
-									className="empty-star"
-									key={index}
-									src={starsgris}
-									alt="star grey"
-								></img>
-							))}
-					</div>
+				<div className="person-card">
+					<img
+						className="imghost-card"
+						src={card.host.picture}
+						alt={card.host.name}
+					/>
+					<p className="hostname-card">{card.host.name}</p>
+				</div>
+
+				<ul className="container-tags">
+					{card.tags.map((tag, i) => (
+						<li className="tag-card" key={i}>
+							{tag}
+						</li>
+					))}
+				</ul>
+
+				<div className="container-stars">
+					{Array(filledStars)
+						.fill()
+						.map((_, index) => (
+							<img
+								className="filled-star"
+								key={index}
+								src={stars}
+								alt="star"
+							></img>
+						))}
+					{Array(emptyStars)
+						.fill()
+						.map((_, index) => (
+							<img
+								className="empty-star"
+								key={index}
+								src={starsgris}
+								alt="star grey"
+							></img>
+						))}
 				</div>
 			</div>
 			<div className="structure-card-detail">

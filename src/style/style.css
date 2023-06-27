@@ -469,7 +469,9 @@ img {
 
 .container-card {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
   position: relative;
   width: 100%;
   margin: 0rem 5rem 0rem 5rem;
@@ -478,6 +480,15 @@ img {
   .container-card {
     margin: 1rem;
     width: 80%;
+  }
+}
+
+.container-title {
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .container-title {
+    order: 0;
   }
 }
 
@@ -491,36 +502,28 @@ img {
   }
 }
 
-.container-title-person {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  .container-title-person {
-    margin-left: 3rem;
-  }
-}
-
 .person-card {
   display: flex;
+  width: 35%;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .person-card {
-    position: absolute;
-    top: 65%;
-    right: -10%;
+    order: 3;
   }
 }
 
 .imghost-card {
   border-radius: 50%;
   margin-top: 1rem;
+  width: 30%;
+  height: 7rem;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   .imghost-card {
-    height: auto;
-    width: 30%;
+    height: 70%;
+    width: 13vw;
   }
 }
 
@@ -528,25 +531,13 @@ img {
   color: #ff6060;
   font-size: larger;
   margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
   order: -1;
 }
 @media (max-width: 768px) {
   .hostname-card {
     margin-top: 1rem;
-  }
-}
-
-.container-tagstars {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-@media (max-width: 768px) {
-  .container-tagstars {
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
   }
 }
 
@@ -560,6 +551,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-right: 3rem;
+    order: 1;
+    width: 100%;
   }
 }
 
@@ -580,8 +573,11 @@ img {
 @media (max-width: 768px) {
   .tag-card {
     height: auto;
-    width: 100%;
+    width: 20%;
+    min-width: 4.5rem;
     padding: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -592,7 +588,9 @@ img {
 @media (max-width: 768px) {
   .container-stars {
     align-self: flex-start;
-    margin-bottom: 5rem;
+    height: 4rem;
+    order: 2;
+    align-items: center;
   }
 }
 
