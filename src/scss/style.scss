@@ -104,7 +104,7 @@ img {
 	z-index: 10;
 	font-size: 2.5rem;
 	@media (max-width: 768px) {
-		font-size: 1rem;
+		font-size: 2rem;
 	}
 }
 
@@ -127,9 +127,10 @@ img {
 	margin-top: 2rem;
 	@include border-radius(20px);
 	align-items: center;
-	@media (max-width: 768px) {
+	@media (max-width: 950px) {
 		padding-top: 0;
 		background-color: $color-text;
+		background-color: white;
 	}
 }
 .card-list a {
@@ -229,7 +230,7 @@ img {
 .drop-structure {
 	width: 100%;
 
-	margin: 2rem;
+	margin: 1rem;
 	@media (max-width: 768px) {
 		display: flex;
 		justify-content: center;
