@@ -267,7 +267,6 @@ img {
 @media (max-width: 768px) {
   .drop-structure {
     display: flex;
-    justify-content: center;
     width: auto;
     margin: 0;
   }
@@ -280,7 +279,7 @@ img {
   border-radius: 5px;
   background-color: #ff6060;
 }
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .elem-drop {
     min-width: 60vw;
   }
