@@ -104,7 +104,7 @@ img {
 	z-index: 10;
 	font-size: 2.5rem;
 	@media (max-width: 768px) {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 }
 
@@ -216,7 +216,7 @@ img {
 	width: 100%;
 	@media (max-width: 768px) {
 		grid-template-columns: repeat(1, 1fr);
-		margin: auto;
+		margin: 5rem;
 	}
 }
 .structure-about {
@@ -233,7 +233,6 @@ img {
 	margin: 1rem;
 	@media (max-width: 768px) {
 		display: flex;
-		// justify-content: center;
 		width: auto;
 		margin: 0;
 	}
@@ -281,8 +280,6 @@ img {
 
 	transition-duration: 0.5s;
 	transform: rotate(0deg);
-	@media (max-width: 768px) {
-	}
 }
 
 .icon-arrow-transform {
@@ -293,13 +290,12 @@ img {
 	margin-right: 1rem;
 	transition-duration: 0.5s;
 	transform: rotate(-180deg);
-	@media (max-width: 768px) {
-	}
 }
 
 .description {
 	width: 100%;
 	@media (max-width: 768px) {
+		min-width: 60vw;
 	}
 }
 .item-description {
@@ -486,6 +482,7 @@ img {
 	height: 2rem;
 	margin-left: auto;
 	margin-right: auto;
+	text-overflow: ellipsis;
 
 	@include flex-center;
 	@include border-radius(10px);
@@ -496,6 +493,8 @@ img {
 		padding: 0.5rem;
 		margin-left: 0;
 		margin-right: 0;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 }
 .container-stars {

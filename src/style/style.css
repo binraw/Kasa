@@ -114,7 +114,7 @@ img {
 }
 @media (max-width: 768px) {
   .container-img h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -245,7 +245,7 @@ img {
 @media (max-width: 768px) {
   .structure-card-detail {
     grid-template-columns: repeat(1, 1fr);
-    margin: auto;
+    margin: 5rem;
   }
 }
 
@@ -320,6 +320,7 @@ img {
   transition-duration: 0.5s;
   transform: rotate(0deg);
 }
+
 .icon-arrow-transform {
   display: flex;
   justify-content: center;
@@ -331,9 +332,16 @@ img {
   transition-duration: 0.5s;
   transform: rotate(-180deg);
 }
+
 .description {
   width: 100%;
 }
+@media (max-width: 768px) {
+  .description {
+    min-width: 60vw;
+  }
+}
+
 .item-description {
   display: flex;
   flex-direction: column;
@@ -563,6 +571,7 @@ img {
   height: 2rem;
   margin-left: auto;
   margin-right: auto;
+  text-overflow: ellipsis;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -578,6 +587,8 @@ img {
     padding: 0.5rem;
     margin-left: 0;
     margin-right: 0;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 

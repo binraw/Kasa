@@ -7,15 +7,15 @@ import starsgris from "../../starsgris.png";
 import DropdownButton from "../../components/DropdownButton";
 import IconVector from "../../Vector.png";
 import Slider from "../../components/Slider";
+import NotFound from "../NotFound/NotFound";
 
-function CardDetail() {
+function Product() {
 	const { id } = useParams();
 
 	const card = cardsData.find((card) => card.id === id);
 
 	if (!card) {
-		window.location.href = "/404";
-		return null;
+		return <NotFound />;
 	}
 
 	const maxRating = 5;
@@ -107,4 +107,4 @@ function CardDetail() {
 	);
 }
 
-export default CardDetail;
+export default Product;
