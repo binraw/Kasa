@@ -434,7 +434,7 @@ img {
 	display: flex;
 	width: 35%;
 	justify-content: center;
-	@media (max-width: 768px) {
+	@media (max-width: 800px) {
 		order: 3;
 	}
 }
@@ -445,7 +445,7 @@ img {
 	width: 30%;
 	height: 7rem;
 	object-fit: cover;
-	@media (max-width: 768px) {
+	@media (max-width: 800px) {
 		height: 70%;
 		width: 13vw;
 	}
@@ -457,7 +457,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	order: -1;
-	@media (max-width: 768px) {
+	@media (max-width: 800px) {
 		margin-top: 1rem;
 	}
 }
@@ -467,7 +467,7 @@ img {
 	max-width: 100%;
 	gap: 1rem;
 
-	@media (max-width: 768px) {
+	@media (max-width: 800px) {
 		display: flex;
 		flex-wrap: wrap;
 		margin-right: 3rem;
@@ -486,7 +486,7 @@ img {
 
 	@include flex-center;
 	@include border-radius(10px);
-	@media (max-width: 768px) {
+	@media (max-width: 800px) {
 		height: auto;
 		width: 20%;
 		min-width: 4.5rem;
@@ -500,7 +500,7 @@ img {
 .container-stars {
 	display: flex;
 	height: 2rem;
-	@media (max-width: 768px) {
+	@media (max-width: 800px) {
 		align-self: flex-start;
 		height: 4rem;
 		order: 2;
@@ -510,7 +510,7 @@ img {
 .filled-star {
 	color: $color-primary;
 	font-size: x-large;
-	@media (max-width: 768px) {
+	@media (max-width: 800px) {
 		height: 1rem;
 		width: auto;
 	}
@@ -518,7 +518,7 @@ img {
 .empty-star {
 	color: #e3e3e3;
 	font-size: x-large;
-	@media (max-width: 768px) {
+	@media (max-width: 800px) {
 		height: 1rem;
 		width: auto;
 	}

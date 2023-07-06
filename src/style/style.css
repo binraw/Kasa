@@ -515,7 +515,7 @@ img {
   width: 35%;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .person-card {
     order: 3;
   }
@@ -528,7 +528,7 @@ img {
   height: 7rem;
   object-fit: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .imghost-card {
     height: 70%;
     width: 13vw;
@@ -543,7 +543,7 @@ img {
   flex-wrap: wrap;
   order: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .hostname-card {
     margin-top: 1rem;
   }
@@ -554,7 +554,7 @@ img {
   max-width: 100%;
   gap: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container-tags {
     display: flex;
     flex-wrap: wrap;
@@ -579,7 +579,7 @@ img {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .tag-card {
     height: auto;
     width: 20%;
@@ -596,7 +596,7 @@ img {
   display: flex;
   height: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container-stars {
     align-self: flex-start;
     height: 4rem;
@@ -609,7 +609,7 @@ img {
   color: #ff6060;
   font-size: x-large;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .filled-star {
     height: 1rem;
     width: auto;
@@ -620,7 +620,7 @@ img {
   color: #e3e3e3;
   font-size: x-large;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .empty-star {
     height: 1rem;
     width: auto;
