@@ -1,5 +1,5 @@
 import React from "react";
-import ImageAccueil from "../../Img.png";
+import ImageAccueil from "../../assets/Img.png";
 import CardList from "../../components/CardList";
 import cardsData from "../../cardsData.json";
 import Footer from "../../components/Footer";

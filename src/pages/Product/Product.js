@@ -2,10 +2,10 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import cardsData from "../../cardsData.json";
 import Footer from "../../components/Footer";
-import stars from "../../stars.png";
-import starsgris from "../../starsgris.png";
+import stars from "../../assets/stars.png";
+import starsgris from "../../assets/starsgris.png";
 import DropdownButton from "../../components/DropdownButton";
-import IconVector from "../../Vector.png";
+import IconVector from "../../assets/Vector.png";
 import Slider from "../../components/Slider";
 import NotFound from "../NotFound/NotFound";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import ImgAbout from "../../ImgAbout.png";
-import IconVector from "../../Vector.png";
+import ImgAbout from "../../assets/ImgAbout.png";
+import IconVector from "../../assets/Vector.png";
 import Footer from "../../components/Footer";
 import DropdownButton from "../../components/DropdownButton";
 

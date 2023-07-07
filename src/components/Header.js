@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from "../Logo.svg";
+import { ReactComponent as Logo } from "../assets/Logo.svg";
 
 function Header() {
 	return (
