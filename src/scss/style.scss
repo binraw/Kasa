@@ -383,7 +383,7 @@ img {
 	@media (max-width: 768px) {
 		width: 100%;
 
-		height: 22rem;
+		height: 255px;
 	}
 }
 .arrow-right {
@@ -396,7 +396,7 @@ img {
 	@media (max-width: 768px) {
 		right: 10%;
 		height: 10%;
-		top: 55%;
+		top: 50%;
 	}
 }
 .arrow-left {
@@ -409,7 +409,7 @@ img {
 	@media (max-width: 768px) {
 		left: 10%;
 		height: 10%;
-		top: 55%;
+		top: 50%;
 	}
 }
 .btn-change {
@@ -425,7 +425,7 @@ img {
 
 	position: relative;
 	width: 100%;
-	margin: 0rem 5rem 0rem 5rem;
+
 	@media (max-width: 768px) {
 		width: 80%;
 		gap: 0;
