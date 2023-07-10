@@ -73,8 +73,9 @@ a:hover {
 }
 @media (max-width: 768px) {
   .img-board {
-    height: 25vh;
-    width: 95%;
+    height: 111px;
+    width: 355px;
+    margin: 0;
   }
 }
 
@@ -104,6 +105,11 @@ img {
   margin-right: auto;
   position: relative;
 }
+@media (max-width: 768px) {
+  .container-img {
+    margin: 0;
+  }
+}
 
 .container-img h1 {
   position: absolute;
@@ -124,7 +130,7 @@ img {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   max-width: 100%;
-  height: 20rem;
+  min-height: 100%;
 }
 
 .card-list {
@@ -183,14 +189,22 @@ img {
 }
 @media (max-width: 950px) {
   .card-image {
-    width: 25rem;
+    width: 335px;
+    height: 255px;
   }
 }
 
 .card-title {
+  position: absolute;
   top: 80%;
   left: 40%;
   color: #f6f6f6;
+}
+@media (max-width: 950px) {
+  .card-title {
+    top: 70%;
+    left: 40%;
+  }
 }
 
 .footer {
@@ -497,12 +511,6 @@ img {
   color: #ff6060;
   font-size: 20px;
 }
-@media (max-width: 768px) {
-  .location-card {
-    font-size: 10px;
-  }
-}
-
 .person-card {
   display: flex;
   width: 35%;

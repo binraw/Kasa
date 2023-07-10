@@ -65,8 +65,9 @@ a:hover {
 	@include border-radius(20px);
 	filter: contrast(40%);
 	@media (max-width: 768px) {
-		height: 25vh;
-		width: 95%;
+		height: 111px;
+		width: 355px;
+		margin: 0;
 	}
 }
 
@@ -95,6 +96,9 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	@media (max-width: 768px) {
+		margin: 0;
+	}
 }
 
 .container-img h1 {
@@ -112,7 +116,7 @@ img {
 	object-fit: cover;
 	@include border-radius(10px);
 	max-width: 100%;
-	height: 20rem;
+	min-height: 100%;
 }
 
 .card-list {
@@ -159,15 +163,21 @@ img {
 
 	@include border-radius(5px);
 	@media (max-width: 950px) {
-		width: 25rem;
+		width: 335px;
+		height: 255px;
 	}
 }
 
 .card-title {
+	position: absolute;
 	top: 80%;
 	left: 40%;
 	@extend %centered;
 	color: $color-text;
+	@media (max-width: 950px) {
+		top: 70%;
+		left: 40%;
+	}
 }
 
 .footer {
@@ -425,7 +435,6 @@ img {
 	color: $color-primary;
 	font-size: 20px;
 	@media (max-width: 768px) {
-		font-size: 10px;
 	}
 }
 
