@@ -257,8 +257,7 @@ img {
 .structure-card-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: auto 5rem auto 5rem;
-  width: 100%;
+  width: 90%;
   gap: 3rem;
 }
 @media (max-width: 768px) {
@@ -492,7 +491,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
-  width: 100%;
+  width: 90%;
 }
 @media (max-width: 768px) {
   .container-card {
@@ -522,12 +521,12 @@ img {
 @media (max-width: 800px) {
   .person-card {
     order: 3;
+    align-items: center;
   }
 }
 
 .imghost-card {
   border-radius: 50%;
-  margin-top: 1rem;
   width: 30%;
   height: 7rem;
   object-fit: cover;
