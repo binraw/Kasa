@@ -24,6 +24,7 @@ code {
   margin-right: 5rem;
   height: 7rem;
   margin-bottom: 0;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .navigation-bar {
@@ -49,6 +50,7 @@ a:hover {
   position: absolute;
   width: 10%;
   height: auto;
+  top: 3rem;
   left: 5%;
 }
 @media (max-width: 768px) {
