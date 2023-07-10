@@ -34,9 +34,9 @@ function DropdownButton({ data }) {
 								/>
 							</li>
 							{isParagraphVisible[index] && (
-								<li className="description">
-									<p className="item-description">{item.description}</p>
-								</li>
+								<div className="description">
+									<div className="item-description">{item.description}</div>
+								</div>
 							)}
 						</ul>
 					</div>

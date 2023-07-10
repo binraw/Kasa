@@ -37,9 +37,9 @@ function Product() {
 			description:
 				card.equipments &&
 				card.equipments.map((equip, i) => (
-					<li key={i} className="equipement-description">
-						{equip}
-					</li>
+					<ul className="equipement-ul" key={i}>
+						<li className="equipement-description">{equip}</li>
+					</ul>
 				)),
 			img: IconVector,
 			id: 1,
