@@ -488,7 +488,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem;
   position: relative;
   width: 100%;
   margin: 0rem 5rem 0rem 5rem;
@@ -556,6 +555,7 @@ img {
   display: flex;
   max-width: 100%;
   gap: 1rem;
+  padding: 0;
 }
 @media (max-width: 800px) {
   .container-tags {
