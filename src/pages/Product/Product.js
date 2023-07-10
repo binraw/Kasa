@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import cardsData from "../../cardsData.json";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/Footer";
 import stars from "../../assets/stars.png";
 import starsgris from "../../assets/starsgris.png";
-import DropdownButton from "../../components/DropdownButton";
+import DropdownButton from "../../components/DropButton/DropdownButton";
 import IconVector from "../../assets/Vector.png";
-import Slider from "../../components/Slider";
+import Slider from "../../components/Slide/Slider";
 import NotFound from "../NotFound/NotFound";
 
 function Product() {

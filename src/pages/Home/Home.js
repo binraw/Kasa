@@ -1,8 +1,8 @@
 import React from "react";
 import ImageAccueil from "../../assets/Img.png";
-import CardList from "../../components/CardList";
+import CardList from "../../components/Card/CardList";
 import cardsData from "../../cardsData.json";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
 	return (

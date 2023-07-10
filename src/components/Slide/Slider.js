@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ArrowR from "../assets/fleched.png";
-import ArrowL from "../assets/flecheg.png";
+import ArrowR from "../../assets/fleched.png";
+import ArrowL from "../../assets/flecheg.png";
 
 function Slider(props) {
 	const [currentCardIndex, setCurrentCardIndex] = useState(0);
