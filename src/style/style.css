@@ -257,6 +257,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   margin: auto 5rem auto 5rem;
   width: 100%;
+  gap: 3rem;
 }
 @media (max-width: 768px) {
   .structure-card-detail {
