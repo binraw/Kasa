@@ -22,7 +22,7 @@ code {
   display: flex;
   justify-content: flex-end;
   margin-right: 5rem;
-  margin-top: 5rem;
+  height: 7rem;
   margin-bottom: 0;
 }
 @media (max-width: 768px) {
@@ -245,7 +245,6 @@ img {
 @media (max-width: 768px) {
   .structure-card-detail {
     grid-template-columns: repeat(1, 1fr);
-    margin: 5rem;
   }
 }
 
@@ -291,12 +290,6 @@ img {
   padding: 0;
   position: relative;
 }
-@media (max-width: 768px) {
-  .description-about {
-    width: 60%;
-  }
-}
-
 .description-about h3 {
   padding: 1rem;
   color: #f6f6f6;
@@ -397,7 +390,7 @@ img {
 .title-card {
   color: #ff6060;
   font-size: 50px;
-  margin-bottom: 0;
+  margin: 0;
 }
 @media (max-width: 768px) {
   .title-card {
@@ -486,8 +479,8 @@ img {
 }
 @media (max-width: 768px) {
   .container-card {
-    margin: 1rem;
     width: 80%;
+    gap: 0;
   }
 }
 
@@ -561,6 +554,7 @@ img {
     margin-right: 3rem;
     order: 1;
     width: 100%;
+    padding: 0;
   }
 }
 
