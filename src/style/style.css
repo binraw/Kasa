@@ -515,7 +515,7 @@ img {
 .person-card {
   display: flex;
   width: 35%;
-  justify-content: center;
+  justify-content: end;
 }
 @media (max-width: 800px) {
   .person-card {
