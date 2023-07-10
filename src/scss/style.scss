@@ -160,6 +160,8 @@ img {
 
 .card-image {
 	position: relative;
+	width: 340px;
+	height: 340px;
 
 	@include border-radius(5px);
 	@media (max-width: 950px) {

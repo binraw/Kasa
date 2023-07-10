@@ -183,6 +183,8 @@ img {
 
 .card-image {
   position: relative;
+  width: 340px;
+  height: 340px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
