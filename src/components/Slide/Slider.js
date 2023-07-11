@@ -25,7 +25,7 @@ function Slider(props) {
 
 	return (
 		<>
-			<div>
+			<div className="container-imgpos">
 				<img
 					className="cover-detail"
 					src={props.pictures[currentCardIndex]}
