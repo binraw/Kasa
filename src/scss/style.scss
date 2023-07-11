@@ -449,7 +449,7 @@ img {
 .person-card {
 	display: flex;
 	width: 35%;
-	justify-content: end;
+	justify-content: flex-end;
 	@media (max-width: 800px) {
 		order: 3;
 		align-items: center;
@@ -488,7 +488,7 @@ img {
 	@media (max-width: 800px) {
 		display: flex;
 		flex-wrap: wrap;
-		margin-right: 3rem;
+
 		order: 1;
 		width: 100%;
 		padding: 0;

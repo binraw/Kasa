@@ -516,7 +516,7 @@ img {
 .person-card {
   display: flex;
   width: 35%;
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media (max-width: 800px) {
   .person-card {
@@ -562,7 +562,6 @@ img {
   .container-tags {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 3rem;
     order: 1;
     width: 100%;
     padding: 0;
