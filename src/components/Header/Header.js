@@ -2,7 +2,7 @@ import { ReactComponent as Logo } from "../../assets/Logo.svg";
 
 function Header() {
 	return (
-		<header>
+		<header className="logo-div">
 			<Logo className="logo-title" />
 		</header>
 	);

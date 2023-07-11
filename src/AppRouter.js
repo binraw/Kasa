@@ -3,11 +3,13 @@ import Home from "../src/pages/Home/Home";
 import About from "../src/pages/About/About";
 import Product from "../src/pages/Product/Product";
 import NotFound from "./pages/NotFound/NotFound";
+import Header from "./components/Header/Header";
 
 function AppRouter() {
 	return (
 		<Router>
-			<nav>
+			<nav className="navigation-div">
+				<Header />
 				<ul className="navigation-bar">
 					<li>
 						<Link to="/">Accueil</Link>
