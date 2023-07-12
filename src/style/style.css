@@ -80,8 +80,14 @@ a:hover {
   .img-board {
     height: 111px;
     min-width: 30%;
-    width: 355px;
-    margin: 0;
+    width: 435px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .img-board {
+    width: 80vw;
   }
 }
 
@@ -176,7 +182,7 @@ img {
     justify-content: center;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .card-list a {
     width: 100%;
   }
@@ -204,10 +210,22 @@ img {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
   .card-image {
     width: 335px;
     height: 255px;
+  }
+}
+@media (max-width: 850px) {
+  .card-image {
+    width: 235px;
+    height: 155px;
+  }
+}
+@media (max-width: 768px) {
+  .card-image {
+    width: 435px;
+    height: 355px;
   }
 }
 
@@ -691,7 +709,7 @@ img {
 }
 @media (max-width: 768px) {
   .navigation-div {
-    width: 50%;
+    width: 60%;
   }
 }
 @media (max-width: 650px) {
