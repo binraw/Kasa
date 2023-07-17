@@ -22,9 +22,9 @@ code {
   display: flex;
   font-size: 24px;
   justify-content: flex-end;
-  margin-right: 5rem;
   height: 7rem;
   margin-bottom: 0;
+  gap: 0.5rem;
   align-items: center;
 }
 @media (max-width: 768px) {
@@ -34,14 +34,11 @@ code {
   }
 }
 
-li {
-  margin-right: 10px;
-}
-
 a {
   text-decoration: none;
   padding: 5px;
   color: #ff6060;
+  white-space: nowrap;
 }
 
 a:hover {
@@ -231,9 +228,11 @@ img {
 
 .card-title {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 40%;
   color: #f6f6f6;
+  white-space: break-spaces;
+  text-overflow: ellipsis;
 }
 @media (max-width: 950px) {
   .card-title {
@@ -482,7 +481,7 @@ img {
 
 .arrow-right {
   position: absolute;
-  top: 45%;
+  top: 40%;
   right: 15%;
   z-index: 10;
   height: 79.2px;
@@ -499,7 +498,7 @@ img {
 
 .arrow-left {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 15%;
   z-index: 10;
   height: 79.2px;
@@ -574,8 +573,8 @@ img {
 }
 @media (max-width: 800px) {
   .imghost-card {
-    height: 70%;
-    width: 13vw;
+    height: 32px;
+    width: 32px;
   }
 }
 
@@ -588,7 +587,7 @@ img {
 }
 @media (max-width: 800px) {
   .hostname-card {
-    margin-top: 1rem;
+    font-size: 12px;
   }
 }
 
@@ -625,6 +624,7 @@ img {
 }
 @media (max-width: 800px) {
   .tag-card {
+    font-size: 10px;
     height: auto;
     width: 20%;
     min-width: 4.5rem;
@@ -709,7 +709,7 @@ img {
 }
 @media (max-width: 768px) {
   .navigation-div {
-    width: 60%;
+    width: 80%;
   }
 }
 @media (max-width: 650px) {
