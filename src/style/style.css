@@ -633,6 +633,10 @@ img {
     margin-right: 0;
     white-space: nowrap;
     overflow: hidden;
+  }
+}
+@media (max-width: 400px) {
+  .tag-card {
     display: inline-block;
   }
 }
